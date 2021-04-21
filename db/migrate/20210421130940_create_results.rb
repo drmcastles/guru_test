@@ -6,6 +6,10 @@ class CreateResults < ActiveRecord::Migration[6.1]
 
 
       t.timestamps
+
+      def down
+
+      end    
     end
   end
 end
