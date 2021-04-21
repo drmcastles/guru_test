@@ -4,6 +4,6 @@ class User < ApplicationRecord
     WHERE
     user_id = #{ self.id } and tests.level = #{ level }"
 
-		Result.joins(query)
+    Result.joins(query)
   end
 end
