@@ -1,8 +1,8 @@
 class User < ApplicationRecord
   def finished_tests(level)
-    query = "JOIN tests ON tests.id = results.test_id
-    WHERE
-    user_id = #{ self.id } and tests.level = #{ level }"
+    def finished_tests(level)
+    Test.joins('join results on tests.id = results.test_id')
+    .where("results.user_id = #{ self.id } and tests.level = #{ level }")
 
     Result.joins(query)
   end

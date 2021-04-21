@@ -25,7 +25,7 @@ Test.create([
 
 Question.create([
 	{ body: 'Tag of Header ?', test_id: Test.find(1).id },
-	{ body: 'Tag of Header ?', test_id: Test.find(2).id },	
+	{ body: 'Tag of Header ?', test_id: Test.find(2).id },
 	{ body: 'Tag of Header ?', test_id: Test.find(3).id },
 	{ body: 'Tag of Header ?', test_id: Test.find(4).id },
 	{ body: 'Tag of Header ?', test_id: Test.find(5).id },
@@ -39,5 +39,6 @@ User.create([
 	{ name: 'John' },
 	{ name: 'Mary' }
 ])
+
 
 Result.create([{ user_id: User.first.id, test_id: Test.first.id }])
