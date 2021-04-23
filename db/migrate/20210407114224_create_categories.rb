@@ -1,5 +1,5 @@
 class CreateCategories < ActiveRecord::Migration[6.1]
-  def change
+  def cnange
     create_table :categories do |t|
       t.string :title
 
